@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1">
+        <ImageView
+            android:src="@drawable/elected"
+            android:layout_width="120dp"
+            android:layout_height="200dp"
+            android:scaleType="fitCenter"
+            android:id="@+id/imageView1" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="0dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout2"
+            android:layout_weight="1">
+            <TextView
+                android:text="John Politician"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewName" />
+            <TextView
+                android:text="Office of blah"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewOfficeName" />
+            <TextView
+                android:text="1234 plain street\n someton fl"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewAddress" />
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/scrollView1"
+        android:nestedScrollingEnabled="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:nestedScrollingEnabled="true">
+            <TextView
+                android:text="Social Media"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView6" />
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:id="@+id/listViewSocialMedia"
+                android:nestedScrollingEnabled="true" />
+            <TextView
+                android:text="Phone numbers"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5" />
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:id="@+id/listViewPhone"
+                android:nestedScrollingEnabled="true" />
+            <TextView
+                android:text="Emails"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5" />
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:id="@+id/listViewEmails"
+                android:nestedScrollingEnabled="true" />
+            <TextView
+                android:text="Websites"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4" />
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:id="@+id/listViewUrls"
+                android:nestedScrollingEnabled="true" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

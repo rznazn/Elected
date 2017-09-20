@@ -1,5 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.babykangaroo.android.elected" android:versionCode="3">
 	<uses-sdk android:minSdkVersion="15" />
-	<application android:label="Elected.Android"></application>
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<application android:label="Elected.android" android:icon="@drawable/elected">
+		<meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyBmSluD9ZHFrX3Xz-b2CL4hz4kTVt_9qPg" />
+	</application>
 </manifest>
